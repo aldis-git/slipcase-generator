@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.bundle.js" ></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>"H" tipa kaste</h1>
+    <div class="container">
+        <div id="inputs">
+            <label for="fileName">Izvades faila nosaukums:</label>
+            <input type="text" id="fileName" name="fileName" value="Test">
+
+            <label for="depth">Platums (mm):</label>
+            <input type="number" id="depth" name="depth" value="268">
+            
+            <label for="height">Augstums (mm):</label>
+            <input type="number" id="height" name="height" value="224">
+
+            <label for="width">Mugura (mm):</label>
+            <input type="number" id="width" name="width" value="85">
+    
+            <label for="materialThickness">Papes biezums (mm):</label>
+            <input type="number" id="materialThickness" name="materialThickness" value="2">
+    
+            <div class="actions">
+    
+                <p id="papeElement">Pape: 0 x 0 mm</p>
+                <p id="parvalksElement">Pārvalks: 0 x 0 mm</p>
+                <button id="calculate">Aprēķināt izmērus</button>
+    
+                <p>Izveidot cirtņus:</p>
+                <div class="pogas">
+                    <button id="createPape">Pape</button>
+                    <button id="createParvalks">Pārvalks</button>
+                    <button id="createSlipcase">Pape un pārvalks</button>
+                </div>
+    
+            </div>
+        </div>
+        <img src="./slipcaseSizes.png">
+
+    </div>
+    
+
+</body>
+</html>
